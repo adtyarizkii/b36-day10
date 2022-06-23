@@ -107,7 +107,7 @@ a:hover{
 .nm {
     overflow: hidden;
     display: -webkit-inline-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
 }
 /* END OF INDEX */
