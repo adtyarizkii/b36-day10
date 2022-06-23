@@ -192,6 +192,8 @@ app.get('/update-project/:id', (req, res) => {
             if (err) throw err;
 
             const projectData = result.rows[0];
+            projectData.start_date = moment(projectData.start_date).format('YYYY-MM-DD')
+            projectData.end_date = moment(projectData.end_date).format('YYYY-MM-DD')
             console.log(projectData);
 
             res.render('update-project', {update: projectData, id})
